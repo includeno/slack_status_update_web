@@ -1,6 +1,6 @@
 From node:16.14.0-buster-slim
 
-EXPOSE 8080
+EXPOSE 80
 WORKDIR /app
 ADD . /app
 
