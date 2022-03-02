@@ -7,7 +7,7 @@ app.use(cors());//不加上这句代码跨域访问时会出现错误，加上�
 const port = 3000;
 
 const {updateStatus}=require('./SlackStatusService');
-app.post('/status/update',async(req, res, next) => {
+app.get('/status/update',async(req, res, next) => {
     let result=""
     let code=0;
     try{
