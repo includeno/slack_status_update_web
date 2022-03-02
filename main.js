@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
+const actuator = require('express-actuator');
 
 const app = express();
+app.use(actuator());
 app.use(express.json());//解析json编码数据
 app.use(cors());//不加上这句代码跨域访问时会出现错误，加上就不会出现跨域错误情况
 const port = 3000;
